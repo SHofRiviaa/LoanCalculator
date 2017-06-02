@@ -28,8 +28,8 @@
         android:layout_width="372dp"
         android:layout_height="50dp"
         android:orientation="horizontal"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="147dp">
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="146dp">
 
         <TextView
             android:id="@+id/yearlyTxt"
@@ -42,7 +42,6 @@
             android:id="@+id/yearlyEdit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:ems="10"
             android:hint="7.5"
             android:inputType="numberDecimal" />
@@ -52,8 +51,8 @@
         android:layout_width="372dp"
         android:layout_height="50dp"
         android:orientation="horizontal"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="49dp">
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="50dp">
 
 
         <TextView
@@ -67,7 +66,6 @@
             android:id="@+id/loanEdit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:ems="10"
             android:hint="50000"
             android:inputType="numberDecimal" />
@@ -99,8 +97,8 @@
         android:layout_width="372dp"
         android:layout_height="50dp"
         android:orientation="horizontal"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="100dp">
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="97dp">
 
         <TextView
             android:id="@+id/term"
@@ -113,7 +111,6 @@
             android:id="@+id/termEdit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1.00"
             android:ems="10"
             android:hint="7"
             android:inputType="numberDecimal" />
@@ -121,7 +118,7 @@
 
     <LinearLayout
         android:layout_width="363dp"
-        android:layout_height="52dp"
+        android:layout_height="20dp"
         android:orientation="horizontal"
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="254dp">
@@ -130,9 +127,73 @@
             android:id="@+id/resultTxt"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity="center"
             android:layout_weight="1"
+            android:gravity="center"
             android:text="@string/results" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="12dp"
+        tools:layout_editor_absoluteY="362dp">
+
+        <TextView
+            android:id="@+id/totTxt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/total_payment" />
+
+        <TextView
+            android:id="@+id/TotPaymAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="64420.44" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="366dp"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="421dp">
+
+        <TextView
+            android:id="@+id/totInterestTxt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/total_interest" />
+
+        <TextView
+            android:id="@+id/totInterestAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="14420.44" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="364dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="299dp">
+
+        <TextView
+            android:id="@+id/monthPayTxt"
+            android:layout_width="182dp"
+            android:layout_height="match_parent"
+            android:text="@string/monthly" />
+
+        <TextView
+            android:id="@+id/monthPayTxtAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="766.91" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
