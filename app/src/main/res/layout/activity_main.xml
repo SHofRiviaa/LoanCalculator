@@ -60,14 +60,14 @@
             android:id="@+id/loanTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="12"
+            android:layout_weight="10"
             android:text="@string/loan_amount" />
 
         <EditText
             android:id="@+id/loanEdit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="0.73"
+            android:layout_weight="1"
             android:ems="10"
             android:hint="50000"
             android:inputType="numberDecimal" />
@@ -117,6 +117,22 @@
             android:ems="10"
             android:hint="7"
             android:inputType="numberDecimal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="363dp"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="254dp">
+
+        <TextView
+            android:id="@+id/resultTxt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="@string/results" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
