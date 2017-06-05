@@ -4,23 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.haidar.salman.loancalculator.MainActivity"
     android:background="@color/colorPrimaryDark">
 
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:layout_height="88dp"
+        android:orientation="horizontal"></LinearLayout>
 
-        <TextView
-            android:id="@+id/textView12"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/title"
-            android:gravity="center"
-            android:textSize="32sp"
-            android:textColor="#fff"
-            android:textStyle="italic"/>
-    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:orientation="horizontal"></LinearLayout>
 </LinearLayout>
