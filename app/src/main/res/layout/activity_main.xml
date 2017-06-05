@@ -19,6 +19,8 @@
             android:layout_weight="1"
             android:text="@string/title"
             android:gravity="center"
-            android:textSize="32sp"/>
+            android:textSize="32sp"
+            android:textColor="#fff"
+            android:textStyle="italic"/>
     </LinearLayout>
 </LinearLayout>
