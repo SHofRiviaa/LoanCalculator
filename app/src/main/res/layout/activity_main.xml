@@ -1,201 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.haidar.salman.loancalculator.MainActivity"
-    tools:layout_editor_absoluteY="81dp"
-    tools:layout_editor_absoluteX="0dp">
+    android:background="@color/colorPrimaryDark">
 
     <LinearLayout
-        android:layout_width="378dp"
-        android:layout_height="20dp"
-        android:orientation="horizontal"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="10dp">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/titleTxt"
-            android:layout_width="365dp"
-            android:layout_height="20dp"
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:text="@string/title"
             android:gravity="center"
-            android:text="@string/title" />
+            android:textSize="32sp"/>
     </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="372dp"
-        android:layout_height="50dp"
-        android:orientation="horizontal"
-        tools:layout_editor_absoluteX="6dp"
-        tools:layout_editor_absoluteY="146dp">
-
-        <TextView
-            android:id="@+id/yearlyTxt"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/yearly_interest" />
-
-        <EditText
-            android:id="@+id/yearlyEdit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="7.5"
-            android:inputType="numberDecimal" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="372dp"
-        android:layout_height="50dp"
-        android:orientation="horizontal"
-        tools:layout_editor_absoluteX="6dp"
-        tools:layout_editor_absoluteY="50dp">
-
-
-        <TextView
-            android:id="@+id/loanTxt"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="10"
-            android:text="@string/loan_amount" />
-
-        <EditText
-            android:id="@+id/loanEdit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="50000"
-            android:inputType="numberDecimal" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="351dp"
-        android:layout_height="50dp"
-        android:orientation="horizontal"
-        tools:layout_editor_absoluteX="17dp"
-        tools:layout_editor_absoluteY="196dp">
-
-        <Button
-            android:id="@+id/calculate"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="3"
-            android:onClick="calculate"
-            android:text="@string/calculate" />
-
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:onClick="clear"
-            android:text="@string/clear" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="372dp"
-        android:layout_height="50dp"
-        android:orientation="horizontal"
-        tools:layout_editor_absoluteX="6dp"
-        tools:layout_editor_absoluteY="97dp">
-
-        <TextView
-            android:id="@+id/term"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/term" />
-
-        <EditText
-            android:id="@+id/termEdit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="7"
-            android:inputType="numberDecimal" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="363dp"
-        android:layout_height="20dp"
-        android:orientation="horizontal"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="254dp">
-
-        <TextView
-            android:id="@+id/resultTxt"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="@string/results" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="360dp"
-        android:layout_height="48dp"
-        android:orientation="horizontal"
-        tools:layout_editor_absoluteX="12dp"
-        tools:layout_editor_absoluteY="362dp">
-
-        <TextView
-            android:id="@+id/totTxt"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="@string/total_payment" />
-
-        <TextView
-            android:id="@+id/totPaymAnswer"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="64420.44" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="366dp"
-        android:layout_height="45dp"
-        android:orientation="horizontal"
-        tools:layout_editor_absoluteX="9dp"
-        tools:layout_editor_absoluteY="421dp">
-
-        <TextView
-            android:id="@+id/totInterestTxt"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="@string/total_interest" />
-
-        <TextView
-            android:id="@+id/totInterestAnswer"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="14420.44" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="364dp"
-        android:layout_height="50dp"
-        android:orientation="horizontal"
-        tools:layout_editor_absoluteX="10dp"
-        tools:layout_editor_absoluteY="312dp">
-
-        <TextView
-            android:id="@+id/monthPayTxt"
-            android:layout_width="182dp"
-            android:layout_height="match_parent"
-            android:text="@string/monthly" />
-
-        <TextView
-            android:id="@+id/monthPayTxtAnswer"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="766.91" />
-    </LinearLayout>
-
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
