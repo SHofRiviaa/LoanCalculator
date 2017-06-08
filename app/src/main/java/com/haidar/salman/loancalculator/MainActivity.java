@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void calculate(View view){
-        
+
     }
 
     public void clear(View view){

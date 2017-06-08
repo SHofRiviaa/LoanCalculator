@@ -102,7 +102,29 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="63dp"
+        android:layout_height="56dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="@string/calculate"
+            android:onClick="calculate"/>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/clear"
+            android:onClick="clear"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
         android:orientation="horizontal">
 
         <TextView
@@ -117,7 +139,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="68dp"
+        android:layout_height="55dp"
         android:orientation="horizontal">
 
         <TextView
@@ -126,10 +148,10 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/monthly"
-            android:textColor="#fff"/>
+            android:textColor="#fff" />
 
         <TextView
-            android:id="@+id/textView22"
+            android:id="@+id/monthPayTxtAnswer"
             android:layout_width="wrap_content"
             android:layout_height="26dp"
             android:layout_weight="1.35"
@@ -139,7 +161,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="79dp"
+        android:layout_height="53dp"
         android:orientation="horizontal">
 
         <TextView
@@ -151,7 +173,7 @@
             android:textColor="#fff" />
 
         <TextView
-            android:id="@+id/textView23"
+            android:id="@+id/totPaymAnswer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -173,7 +195,7 @@
             android:textColor="#fff"/>
 
         <TextView
-            android:id="@+id/textView24"
+            android:id="@+id/totInterestAnswer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
